@@ -47,6 +47,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			'eventLabel' : 'HomePage'
 	 	});
 		}
+		function theServices(){
+			window.dataLayer.push({
+			'event' : 'event_services',
+			'eventCategory' : 'The7 | Services',  
+			'eventAction' : 'Services button Click',
+			'eventLabel' : 'Services'
+	 	});
+		}
+		function theWork(){
+			window.dataLayer.push({
+			'event' : 'event_work',
+			'eventCategory' : 'The7 | Work',  
+			'eventAction' : 'Work button Click',
+			'eventLabel' : 'Work'
+	 	});
+		}
+		function theBlog(){
+			window.dataLayer.push({
+			'event' : 'event_blog',
+			'eventCategory' : 'The7 | Blog',  
+			'eventAction' : 'Blog button Click',
+			'eventLabel' : 'Blog'
+	 	});
+		}
+		function thePricing(){
+			window.dataLayer.push({
+			'event' : 'event_pricing',
+			'eventCategory' : 'The7 | Pricing',  
+			'eventAction' : 'Pricing button Click',
+			'eventLabel' : 'Pricing'
+	 	});
+		}
+		function theTeam(){
+			window.dataLayer.push({
+			'event' : 'event_team',
+			'eventCategory' : 'The7 | Team',  
+			'eventAction' : 'Team button Click',
+			'eventLabel' : 'Team'
+	 	});
+		}
+		function theContact(){
+			window.dataLayer.push({
+			'event' : 'event_contact',
+			'eventCategory' : 'The7 | Contact',  
+			'eventAction' : 'Contact button Click',
+			'eventLabel' : 'Contact'
+	 	});
+		}
+		
 	</script>
         </head>
         <body id="home">
@@ -67,12 +116,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <label for="nav-button" onclick></label>
                                 <ul class="nav-container">
                                     <li><a href="#home" class="current" onclick="theHome()">Home</a></li>
-                                    <li><a href="#services">Services</a></li>
-                                    <li><a href="#work">Work</a></li>
-                                    <li><a href="#blog">Blog</a></li>
-                                    <li><a href="#pricing">Pricing</a></li>
-                                    <li><a href="#team">Team</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a href="#services" onclick="theServices()">Services</a></li>
+                                    <li><a href="#work" onclick="theWork()">Work</a></li>
+                                    <li><a href="#blog" onclick="theBlog()">Blog</a></li>
+                                    <li><a href="#pricing" onclick="thePricing()">Pricing</a></li>
+                                    <li><a href="#team" onclick="theTeam()">Team</a></li>
+                                    <li><a href="#contact" onclick="theContact()">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
