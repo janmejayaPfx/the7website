@@ -39,63 +39,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
            <![endif]-->
 	    <script>
- 		function theHome(){
-			window.dataLayer.push({
-			'event' : 'event_homepage',
-			'eventCategory' : 'The7 | HomePage',  
-			'eventAction' : 'Home button Click',
-			'eventLabel' : 'HomePage'
-	 	});
-		}
-		function theServices(){
-			window.dataLayer.push({
-			'event' : 'event_services',
-			'eventCategory' : 'The7 | Services',  
-			'eventAction' : 'Services button Click',
-			'eventLabel' : 'Services'
-	 	});
-		}
-		function theWork(){
-			window.dataLayer.push({
-			'event' : 'event_work',
-			'eventCategory' : 'The7 | Work',  
-			'eventAction' : 'Work button Click',
-			'eventLabel' : 'Work'
-	 	});
-		}
-		function theBlog(){
-			window.dataLayer.push({
-			'event' : 'event_blog',
-			'eventCategory' : 'The7 | Blog',  
-			'eventAction' : 'Blog button Click',
-			'eventLabel' : 'Blog'
-	 	});
-		}
-		function thePricing(){
-			window.dataLayer.push({
-			'event' : 'event_pricing',
-			'eventCategory' : 'The7 | Pricing',  
-			'eventAction' : 'Pricing button Click',
-			'eventLabel' : 'Pricing'
-	 	});
-		}
-		function theTeam(){
-			window.dataLayer.push({
-			'event' : 'event_team',
-			'eventCategory' : 'The7 | Team',  
-			'eventAction' : 'Team button Click',
-			'eventLabel' : 'Team'
-	 	});
-		}
-		function theContact(){
-			window.dataLayer.push({
-			'event' : 'event_contact',
-			'eventCategory' : 'The7 | Contact',  
-			'eventAction' : 'Contact button Click',
-			'eventLabel' : 'Contact'
-	 	});
-		}
-		
+		function dlPush(ename,cat,act,lab){
+				window.dataLayer.push({
+				'event' : ename,
+				'eventCategory' : cat,  
+				'eventAction' : act,
+				'eventLabel' : lab
+			});
+			}
 	</script>
         </head>
         <body id="home">
@@ -115,7 +66,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <input type="checkbox" id="nav-button">
                                 <label for="nav-button" onclick></label>
                                 <ul class="nav-container">
-                                    <li><a href="#home" class="current" onclick="theHome()">Home</a></li>
+                                    <li><a href="#home" class="current" onclick="dlPush('event_homepage', 'The7 | HomePage', 'Home button Click', 'HomePage');">Home</a></li>
                                     <li><a href="#services" onclick="theServices()">Services</a></li>
                                     <li><a href="#work" onclick="theWork()">Work</a></li>
                                     <li><a href="#blog" onclick="theBlog()">Blog</a></li>
